@@ -1,34 +1,22 @@
 #include "main.h"
 
 /**
- * print_triangle - Prints a triangle ff by a new line
- * @size: The size of the squares triangle
- * Return: empty
+ * print_triangle - Print a triangle.
+ * @size: numbers of lines.
+ * Return: no return.
  */
-
-void print_triangles(int size)
-
+void print_triangle(int size)
 {
+	int x,y;
 
-	int x, y, z;
-
-	if (size <= 0)
-	{
-	_putchar('\n')
-	}
-	else
-	{
 	for (x = 0; x < size; x++)
 	{
-	for (y = size - x; y > 1; y--)
-	{
-	_putchar(32);
-	}
-	for (z = 0; z <= x; z++)
-	{
-	_putchar(35);
+		for (y = 1; y < (size - x); y++)
+			_putchar(' ');
+		for (y--; y < size; y++)
+			_putchar(35);
+		if (x < (size - 1))
+			_putchar('\n');
 	}
 	_putchar('\n');
-	}
-	}
 }
