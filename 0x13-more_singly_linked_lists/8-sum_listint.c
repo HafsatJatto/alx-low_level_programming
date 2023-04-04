@@ -2,9 +2,9 @@
 
 /**
  * sum_listint - Sum of all the data (n) of a listint_t linked lists.
- * @head: The pointer of the first node in the linked list.
+ * @head: The pointer to the first node.
  *
- * Return: Sum of all the data
+ * Return: Sum all the data.
  */
 int sum_listint(listint_t *head)
 {
