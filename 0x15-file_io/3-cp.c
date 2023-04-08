@@ -9,7 +9,7 @@ void close_file(int fd);
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file buffer is storng chars for.
  *
- * Return: A pointer to the newly allocated buffer.
+ * Return: A pointer to the newly-allocated buffer.
  */
 
 char *create_buffer(char *file)
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 		if (from == -1 || r == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Can't read fromfile %s\n", argv[1]);
+					"Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
